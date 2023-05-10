@@ -5,7 +5,7 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i3;
 
-import 'package:internet_connection_checker/internet_connection_checker.dart'
+import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart'
     as _i2;
 import 'package:mockito/mockito.dart' as _i1;
 
@@ -41,11 +41,11 @@ class _FakeAddressCheckResult_1 extends _i1.SmartFake
         );
 }
 
-/// A class which mocks [InternetConnectionChecker].
+/// A class which mocks [InternetConnectionCheckerPlus].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockInternetConnectionChecker extends _i1.Mock
-    implements _i2.InternetConnectionChecker {
+class MockInternetConnectionCheckerPlus extends _i1.Mock
+    implements _i2.InternetConnectionCheckerPlus {
   @override
   Duration get checkInterval => (super.noSuchMethod(
         Invocation.getter(#checkInterval),

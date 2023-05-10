@@ -1,14 +1,14 @@
 library connectivity_info;
 
 import 'package:equatable/equatable.dart';
-import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
 
 class ConnectivityInfo extends Equatable {
-  static final _internetConnectionChecker = InternetConnectionChecker();
+  static final _internetConnectionChecker = InternetConnectionCheckerPlus();
 
   ConnectivityInfo() {
     _internetConnectionChecker.addresses = [
-      AddressCheckOptions(hostname: 'google.com', port: 80),
+      AddressCheckOptions(Uri(scheme: 'https', host: 'google.com')),
     ];
   }
 
